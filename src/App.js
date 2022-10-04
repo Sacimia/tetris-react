@@ -1,25 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import "./styles.css";
+//I imported styled and Tetris.js to make this App;
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import Tetris from 'src/components/Tetris';
+
+const App = () => {
+  <div className="App">
+      <Tetris />
+  </div>
+};
 
 export default App;
